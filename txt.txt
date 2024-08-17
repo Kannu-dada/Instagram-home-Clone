@@ -1,0 +1,22 @@
+var stry =document.querySelector(".stry");
+var emtstry = ""
+// usersArray.forEach(function(val,idx){
+//   emtstry+= `<div class="stry">
+//       <div class="timer"></div>
+//       <div class="user_names">
+//           <img id="${idx}" src="${val.imageSrc}" alt="">
+//           <h3>${val.username}</h3>
+//       </div>
+//     </div>`
+// });
+
+// stry.innerHTML=emtstry;
+
+var story_container=document.querySelector(".story_container")
+
+story_container.addEventListener("click",function(dets){
+  // var currentStory =  usersArray[dets.target.id].story
+  stry.style.display = "initial"
+  stry.style.backgroundImage = `url(${dets.story})`
+  // console.log("hello");
+})

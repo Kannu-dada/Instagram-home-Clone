@@ -1,0 +1,209 @@
+@font-face {
+  font-family: instagram;
+  src: url(bride.woff2);
+}
+@font-face {
+  font-family:awesome ;
+  src: url(Grandista.woff2);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'gilroy';
+ }
+
+body,html{
+  width: 100%;
+  height: 100%;
+}
+
+.main{
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+#box{
+  width: 30vmax;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav{
+  width: 100% ;
+  height: 5vmax;
+  padding: 0.5vw 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#nav h1{
+  font-family:awesome;
+  font-size: 2vw;
+  font-weight: 100;
+}
+
+#right{
+
+  font-size: 2vw;
+  display: flex;
+  gap: 1.5vw;
+}
+#container{
+  width: 100%;
+  height: 8.3vw;
+  padding: 0.5vw 2vw;
+  display: flex;
+  gap: 1vw;
+  white-space:nowrap;
+  overflow-x: auto;
+}
+.story_container{
+  display: flex;
+  width: 6vw;
+  flex-direction: column;
+  align-items: center;  
+}
+.story_container h4{
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+.image{
+  height: 5vmax;
+  width: 5vmax;
+  background: linear-gradient(to right top ,rgb(255, 145, 0),red,rgb(96, 20, 96));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img{
+  height: 4.5vmax;
+  width: 4.5vmax;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#container::-webkit-scrollbar{
+  height: 0px;
+  width: 0px;  
+}  
+.post_section{
+  width: 100%;
+  display: flex;
+}
+.posts{
+  width: 100%;
+}
+.user_names{
+  width: 100%;
+  height: 4vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 0vw 0.6vw;
+}
+.user_names img{
+  width: 3vmax;
+  height: 3vmax;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user_names h3{
+  font-size: 1.7vw;
+  font-weight: 500;
+}
+.content img{
+  height: 34vmax;
+  width: 30vmax;
+  object-fit: cover;
+  object-position: top;
+}
+.actions{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vw 1vw;
+  font-size: 2.2vw;
+  height: 2.5;
+  color: white;
+}
+.captions{
+  padding: 1vw 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: .5vw;
+}
+.captions h4{
+  font-weight: 500;
+}
+.captions h5{
+  font-weight: 500;
+}
+.dull{
+  color: #8b8b8b;
+}
+.user_name_b{
+  font-weight: 600;
+}
+body::-webkit-scrollbar{
+  height: 0px;
+  width: 0px;  
+}
+/* .stry{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  display: none;
+  background-color: rgb(27, 144, 202); 
+  padding: 10px;
+} */
+.stry{
+  height: 47.5vmax;
+  width: 30vmax;
+  background-color: #0f740091;
+  position: absolute;
+  background-image: url("https://images.unsplash.com/photo-1720247524001-46a6ec33c60b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+
+.stry .timer{
+  width: 100%;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.509);
+  border-radius: 50px;
+}
+.stry .timer .growth{
+  height: 100%;
+  width: 0%;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.stry .user_names{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.stry .user_names img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.stry .userStory h3{
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
